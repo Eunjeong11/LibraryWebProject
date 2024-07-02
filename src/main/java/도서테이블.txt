@@ -1,0 +1,16 @@
+--도서테이블--
+
+drop table book;
+create table book(
+bcode number(4) constraint book_bcode_pk primary key,       
+bname varchar2(100),                                                   
+wname varchar2(50),                                                 
+genre varchar2(20),                                                 
+publisher varchar2(20),                                       
+issue  number(6) not null,                                       
+publisheddate date,                                               
+poster varchar2(30),
+hit  number(4)                                                  
+);
+
+commit;
